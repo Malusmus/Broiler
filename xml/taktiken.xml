@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TaktikDef xmlns="http://broiler.uni-hamburg.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://broiler.uni-hamburg.de">
+
+
+	<Taktik>
+		<typ>V</typ>
+		<name>prove_and</name>
+		<beschreibung>prove_and</beschreibung>
+		<coqCode>prove_and</coqCode>
+		<buttonLabel>A,B=>A^B</buttonLabel>
+	</Taktik>
+	<Taktik>
+		<typ>H</typ>
+		<name>use_and</name>
+		<beschreibung>use_and</beschreibung>
+		<coqCode>use_and</coqCode>
+		<buttonLabel>AvB -> A bzw. A^B => B</buttonLabel>
+		<parameter>H</parameter>
+	</Taktik>
+	<Taktik>
+		<typ>V</typ>
+		<name>prove_or_left</name>
+		<beschreibung>prove_or_left</beschreibung>
+		<coqCode>prove_or_left</coqCode>
+		<buttonLabel>A=>AvB</buttonLabel>
+	</Taktik>
+	<Taktik>
+		<typ>V</typ>
+		<name>prove_or_right</name>
+		<beschreibung>prove_or_right</beschreibung>
+		<coqCode>prove_or_right</coqCode>
+		<buttonLabel>B=>AvB</buttonLabel>
+	</Taktik>
+	<Taktik>
+		<typ>H</typ>
+		<name>use_or</name>
+		<beschreibung>use_or</beschreibung>
+		<coqCode>use_or</coqCode>
+		<buttonLabel>AVB ,CunterA,CunterB =>C</buttonLabel>
+		<parameter>H</parameter>
+	</Taktik>
+	<Taktik>
+		<typ>V</typ>
+		<name>prove_imp</name>
+		<beschreibung>prove_imp</beschreibung>
+		<coqCode>prove_imp</coqCode>
+		<buttonLabel>BunterA=>A->B</buttonLabel>
+	</Taktik>
+	<Taktik>
+		<typ>H</typ>
+		<name>use_imp</name>
+		<beschreibung>use_imp</beschreibung>
+		<coqCode>use_imp</coqCode>
+		<buttonLabel>A->B,A => B</buttonLabel>
+		<parameter>H</parameter>
+		<parameter>H'</parameter>
+	</Taktik>
+	<Taktik>
+		<typ>V</typ>
+		<name>prove_iff</name>
+		<beschreibung>prove_iff</beschreibung>
+		<coqCode>prove_iff</coqCode>
+		<buttonLabel>A->B,B->A=>AxB</buttonLabel>
+	</Taktik>
+	<Taktik>
+		<typ>H</typ>
+		<name>use_iff</name>
+		<beschreibung>use_iff</beschreibung>
+		<coqCode>use_iff</coqCode>
+		<buttonLabel>AxB=>A->B bzw. AxB=>B->A</buttonLabel>
+		<parameter>H</parameter>
+	</Taktik>
+	<Taktik>
+		<typ>V</typ>
+		<name>prove_True</name>
+		<beschreibung>prove_True</beschreibung>
+		<coqCode>prove_True</coqCode>
+		<buttonLabel>=>True</buttonLabel>
+	</Taktik>
+	<Taktik>
+		<typ>H</typ>
+		<name>use_False</name>
+		<beschreibung>use_False</beschreibung>
+		<coqCode>use_False</coqCode>
+		<buttonLabel>False=>A</buttonLabel>
+		<parameter>H</parameter>
+	</Taktik>
+	<Taktik>
+		<typ>H</typ>
+		<name>use_not</name>
+		<beschreibung>use_not</beschreibung>
+		<coqCode>use_not</coqCode>
+		<buttonLabel>fA,A=>False</buttonLabel>
+		<parameter>H</parameter>
+	</Taktik>
+<Taktik>
+		<typ>H</typ>
+		<name>use</name>
+		<beschreibung>use</beschreibung>
+		<coqCode>exact</coqCode>
+		<buttonLabel>Hypothese gleich Ziel</buttonLabel>
+		<parameter>H</parameter>
+	</Taktik>
+</TaktikDef>
